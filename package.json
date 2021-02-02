@@ -24,5 +24,13 @@
     "multer": "^1.4.2"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tddgit/react-node-guitar_shop.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tddgit/react-node-guitar_shop/issues"
+  },
+  "homepage": "https://github.com/tddgit/react-node-guitar_shop#readme",
   "description": ""
 }
