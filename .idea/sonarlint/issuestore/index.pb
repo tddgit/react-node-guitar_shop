@@ -2,8 +2,6 @@
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
-<
-package.json,7/0/7030d0b2f71b999ff89a343de08c414af32fc93a
 4
 .env,3/c/3c84dcdc6bbe3d7817c49dcdc327b926fea1808a
 @
@@ -14,3 +12,27 @@ E
 ,.idea/inspectionProfiles/Project_Default.xml,4/9/496a238a6afa168dbaf6efd37bb459331589579c
 J
 .idea/jsLinters/eslint.xml,e/b/eb1f02ca8ef3d0da59c956a13898780dee950d48
+S
+#.idea/sonarlint/issuestore/index.pb,9/f/9fe84ebb15faf917b7def6236dba604453cc61e0
+I
+server/middleware/auth.js,5/8/58731c2f34308157537b986042391b2bf16a8a0a
+J
+server/middleware/admin.js,9/a/9a49759f645cf368bd567542a430d5c1cecbe3d1
+F
+server/models/brand.js,7/8/78db126ad9a0dd3be3de063da77b1109b9072aec
+E
+server/models/wood.js,7/c/7c78b8561b146132f13aa71b46bd6f074062bbfe
+H
+server/models/product.js,0/b/0b12a9182eda6be71c493cc766a32dba46c6e10c
+E
+server/yarn-error.log,2/e/2e45ef005c1384b825d181afb7f75ff75fc30a62
+@
+server/yarn.lock,6/e/6e476f2238c81efc7150afad15cafae268566c8e
+H
+server/package-lock.json,d/0/d015b61d94ec074e22132931840237a6e110b623
+A
+server/.gitignore,6/8/684633b668b24c06fe5d5ba72b7ed42a437aa655
+C
+client/package.json,a/d/ad8a30996233c30cdd545dbf5f18765b86e6bf64
+C
+server/package.json,5/4/54e8f14248f674b305c14bde70fadbe1da1edb31

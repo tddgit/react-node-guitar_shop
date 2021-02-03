@@ -1,13 +1,28 @@
 
-\javascript:S3801/"4Refactor this function to use "return" consistently.(Üï„ûùÿÿÿÿ8 ß¨ö.
-Ejavascript:S1441"Strings must use singlequote.(Âß±ûüÿÿÿÿ8š§Ï¨ö.
-Ejavascript:S1441,"Strings must use singlequote.(ŠŠ¤ûÿÿÿÿ8—×ª¨ö.
-Ejavascript:S1441"Strings must use singlequote.(°¶¢ÿÿÿÿÿÿ8‰ƒ¡§ö.
-\javascript:S38011"4Refactor this function to use "return" consistently.(»Î‘ºÿÿÿÿÿ8 ß¨ö.
-Ujavascript:S11171"-'err' is already declared in the upper scope.(»Î‘ºÿÿÿÿÿ8 ß¨ö.
-Ejavascript:S1441="Strings must use singlequote.(ÌõÉêüÿÿÿÿ8Õ²°§ö.
-Bjavascript:S1210" Expected { after 'if' condition.(ûÑ„ğ8 ß¨ö.
-Bjavascript:S1212" Expected { after 'if' condition.(ûÑ„ğ8¦¼å¨ö.
-Qjavascript:S3504-")Unexpected var, use let or const instead.(ÍàÁàıÿÿÿÿ8¡µ®¨ö.
-Ejavascript:S1441."Strings must use singlequote.(¹ÇÔ¼ıÿÿÿÿ8 ß¨ö.
-Ajavascript:S1451"&Add or update the header of this file.8–Ú §ö.
+Bjavascript:S1214" Expected { after 'if' condition.(ûÑ„ğ8‹¿–Åö.
+Vjavascript:S1117K".'user' is already declared in the upper scope.(º¿Éòûÿÿÿÿ8‹¿–Åö.
+Wjavascript:S3801T"4Refactor this function to use "return" consistently.(üúÚ­8¶ÜÈÅö.
+Bjavascript:S121L" Expected { after 'if' condition.(¸ş©¬8‹¿–Åö.
+Ejavascript:S1441["Strings must use singlequote.(ÌõÉêüÿÿÿÿ8‹¿–Åö.
+Ejavascript:S1441."Strings must use singlequote.(ŠŠ¤ûÿÿÿÿ8‹¿–Åö.
+Ejavascript:S14410"Strings must use singlequote.(¹ÇÔ¼ıÿÿÿÿ8‹¿–Åö.
+Qjavascript:S1117T".'user' is already declared in the upper scope.(üúÚ­8¶ÜÈÅö.
+Ljavascript:S3504H")Unexpected var, use let or const instead.(İÀÛË8‹¿–Åö.
+Ejavascript:S1441"Strings must use singlequote.(Âß±ûüÿÿÿÿ8‹¿–Åö.
+\javascript:S38013"4Refactor this function to use "return" consistently.(»Î‘ºÿÿÿÿÿ8‹¿–Åö.
+Qjavascript:S3504/")Unexpected var, use let or const instead.(ÍàÁàıÿÿÿÿ8‹¿–Åö.
+Ejavascript:S1441"Strings must use singlequote.(ÃæÒúÿÿÿÿ8‹¿–Åö.
+Qjavascript:S3504G")Unexpected var, use let or const instead.(ÍàÁàıÿÿÿÿ8‹¿–Åö.
+?javascript:S3498T"Expected property shorthand.(üúÚ­8¶ÜÈÅö.
+Bjavascript:S121U" Expected { after 'if' condition.(¸ş©¬8¶ÜÈÅö.
+Wjavascript:S3801@"4Refactor this function to use "return" consistently.(’»â°8‹¿–Åö.
+Ajavascript:S1451"&Add or update the header of this file.8‹¿–Åö.
+\javascript:S38011"4Refactor this function to use "return" consistently.(Üï„ûùÿÿÿÿ8‹¿–Åö.
+Qjavascript:S3504R")Unexpected var, use let or const instead.(ÍàÁàıÿÿÿÿ8÷Ğ·Åö.
+Ejavascript:S1441"Strings must use singlequote.(°¶¢ÿÿÿÿÿÿ8‹¿–Åö.
+Pjavascript:S1117T"-'err' is already declared in the upper scope.(üúÚ­8¶ÜÈÅö.
+Bjavascript:S121A" Expected { after 'if' condition.(¸ş©¬8‹¿–Åö.
+Ujavascript:S11173"-'err' is already declared in the upper scope.(»Î‘ºÿÿÿÿÿ8‹¿–Åö.
+\javascript:S3801K"4Refactor this function to use "return" consistently.(º¿Éòûÿÿÿÿ8‹¿–Åö.
+@javascript:S1441"Strings must use singlequote.(¶âØÜ8‹¿–Åö.
+Bjavascript:S1212" Expected { after 'if' condition.(ûÑ„ğ8‹¿–Åö.

@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/server.js",
-    "server": "nodemon server/server.js"
+    "start": "node server.js",
+    "server": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
@@ -46,5 +46,6 @@
     "url": "https://github.com/tddgit/react-node-guitar_shop/issues"
   },
   "homepage": "https://github.com/tddgit/react-node-guitar_shop#readme",
+  "devDependencies": {},
   "description": ""
 }

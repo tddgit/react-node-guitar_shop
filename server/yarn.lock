@@ -21,7 +21,7 @@
   dependencies:
     "@fortawesome/fontawesome-common-types" "^0.1.7"
 
-"@fortawesome/fontawesome@^1.1.8":
+"@fortawesome/fontawesome@^1.1.8", "@fortawesome/fontawesome@>=1.1.0":
   "integrity" "sha512-c0/MtkPVT0fmiFcCyYoPjkG9PkMOvfrZw2+0BaJ+Rh6UEcK1AR/LaRgrHHjUkbAbs9LXxQJhFS8CJ4uSnK2+JA=="
   "resolved" "https://registry.npmjs.org/@fortawesome/fontawesome/-/fontawesome-1.1.8.tgz"
   "version" "1.1.8"
@@ -1208,7 +1208,7 @@
   dependencies:
     "css-vendor" "^0.3.8"
 
-"jss@^9.3.3", "jss@^9.7.0":
+"jss@^9.0.0", "jss@^9.3.3", "jss@^9.4.0", "jss@^9.7.0":
   "integrity" "sha512-awj3XRZYxbrmmrx9LUSj5pXSUfm12m8xzi/VKeqI1ZwWBtQ0kVPTs3vYs32t4rFw83CgFDukA8wKzOE9sMQnoQ=="
   "resolved" "https://registry.npmjs.org/jss/-/jss-9.8.7.tgz"
   "version" "9.8.7"
@@ -1297,7 +1297,7 @@
   "resolved" "https://registry.yarnpkg.com/lodash.once/-/lodash.once-4.1.1.tgz"
   "version" "4.1.1"
 
-"lodash@^4.17.11", "lodash@^4.17.15", "lodash@^4.17.5":
+"lodash@^4.17.11", "lodash@^4.17.15", "lodash@^4.17.5", "lodash@>=4.0":
   "integrity" "sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA=="
   "resolved" "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz"
   "version" "4.17.20"
@@ -1387,7 +1387,7 @@
   dependencies:
     "minimist" "^1.2.5"
 
-"moment@^2.29.1":
+"moment@^2.19.1", "moment@^2.29.1":
   "integrity" "sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ=="
   "resolved" "https://registry.yarnpkg.com/moment/-/moment-2.29.1.tgz"
   "version" "2.29.1"
@@ -1411,7 +1411,7 @@
   "resolved" "https://registry.yarnpkg.com/mongoose-legacy-pluralize/-/mongoose-legacy-pluralize-1.0.2.tgz"
   "version" "1.0.2"
 
-"mongoose@^5.11.14":
+"mongoose@*", "mongoose@^5.11.14":
   "integrity" "sha512-sDI5/i1C9JD3ysDbVGqQG4N6vMC3ZOY7sH/bT63/+3vJub2Nys//JegL4y4iS7v8Vgvje3sNA3ladMSsVnv6TQ=="
   "resolved" "https://registry.yarnpkg.com/mongoose/-/mongoose-5.11.14.tgz"
   "version" "5.11.14"
@@ -1717,7 +1717,7 @@
   dependencies:
     "asap" "~2.0.3"
 
-"prop-types@^15.5.10", "prop-types@^15.5.6", "prop-types@^15.5.7", "prop-types@^15.5.8", "prop-types@^15.6.0", "prop-types@^15.6.1", "prop-types@^15.6.2":
+"prop-types@^15.0.0", "prop-types@^15.5.10", "prop-types@^15.5.6", "prop-types@^15.5.7", "prop-types@^15.5.8", "prop-types@^15.6.0", "prop-types@^15.6.1", "prop-types@^15.6.2":
   "integrity" "sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ=="
   "resolved" "https://registry.npmjs.org/prop-types/-/prop-types-15.7.2.tgz"
   "version" "15.7.2"
@@ -1997,7 +1997,7 @@
   "resolved" "https://registry.npmjs.org/redux-thunk/-/redux-thunk-2.3.0.tgz"
   "version" "2.3.0"
 
-"redux@^4.0.0":
+"redux@^2.0.0 || ^3.0.0 || ^4.0.0-0", "redux@^4.0.0":
   "integrity" "sha512-NnnHF0h0WVE/hXyrB6OlX67LYRuaf/rJcbWvnHHEPCF/Xa/AZpwhs/20WyqzQae5x4SD2F9nPObgBh2rxAgLiA=="
   "resolved" "https://registry.npmjs.org/redux/-/redux-4.0.0.tgz"
   "version" "4.0.0"
