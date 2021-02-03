@@ -1,5 +1,6 @@
 const express = require("express");
 const { auth } = require("./middleware/auth");
+const { admin } = require("./middleware/admin");
 
 const cookieParser = require("cookie-parser");
 
@@ -22,6 +23,53 @@ const { User } = require("./models/user");
 //============MIDDLEWARE=====================
 
 //===========================================
+//              PRODUCTS
+//===========================================
+
+//===========================================
+//              WOODS
+//===========================================
+const { Wood } = require("./models/wood");
+
+app.post("/api/product/wood", auth, admin, (req, res) => {
+  const wood = new Wood(req.body);
+  wood.save((err, doc) => {
+    if (err) return res.json({ success: false, err });
+    res.status(400).json({ success: true, wood: doc });
+  });
+});
+
+app.get("/api/product/woods", auth, admin, (req, res) => {
+  Wood.find({}, (err, data) => {
+    if (err) return res.json({ success: false, err });
+    res.status(400).json({ success: true, woodsdata: data });
+  });
+});
+
+//===========================================
+//              BRANDS
+//===========================================
+
+const { Brand } = require("./models/brand");
+
+app.post("/api/product/brand", auth, admin, (req, res) => {
+  const brand = new Brand(req.body);
+  brand.save((err, doc) => {
+    if (err) return res.status(400).json({ success: false, error: err });
+    res.status(200).json({
+      success: true,
+      branddata: doc,
+    });
+  });
+});
+
+app.get("/api/product/brands", auth, admin, (req, res) => {
+  Brand.find({}, (err, brands) => {
+    if (err) return res.status(400).json({ success: "Data not found", err });
+    res.status(200).send(brands); //json({ status: true, brandata: brands });
+  });
+});
+//===========================================
 //              USERS
 //===========================================
 
@@ -40,7 +88,7 @@ app.get("/api/users/auth", auth, (req, res) => {
 app.post("/api/users/register", (req, res) => {
   const user = new User(req.body);
   user.save((err, doc) => {
-    if (err) return res.json({ success: false, error: err.message });
+    if (err) return res.json({ success: false, error: err });
     res.status(200).json({
       success: true,
       userdata: doc,
