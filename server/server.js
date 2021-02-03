@@ -19,6 +19,9 @@ app.use(cookieParser());
 
 //=============MODELS========================
 const { User } = require("./models/user");
+const { Wood } = require("./models/wood");
+const { Brand } = require("./models/brand");
+const { Product } = require("./models/product");
 
 //============MIDDLEWARE=====================
 
@@ -26,10 +29,60 @@ const { User } = require("./models/user");
 //              PRODUCTS
 //===========================================
 
+// By Sell
+// /articles?sortBy=sold&order=desc&limit=4
+//BY ARRIVAL
+// /articles?sortBy=createdAt&order=desc&limit=4
+
+app.get("/api/product/articles", (req, res) => {
+  let order = req.query.order ? req.query.order : "asc";
+  let sortBy = req.query.sortBy ? req.query.sortBy : "_id";
+  let limit = req.query.limit ? parseInt(req.query.limit) : 100;
+
+  Product.find()
+    .populate("brand")
+    .populate("wood")
+    .sort([[sortBy, order]])
+    .limit(limit)
+    .exec((err, articles) => {
+      if (err) return res.status(400).send(err.message);
+      res.send(articles);
+    });
+});
+
+app.get("/api/product/articles_by_id", (req, res) => {
+  const type = req.query.type;
+  let items = req.query.id;
+  if (type === "array") {
+    const ids = req.query.id.split(",");
+    items = [];
+    items = ids.map((item) => {
+      return mongoose.Types.ObjectId(item);
+    });
+  }
+  console.log(items);
+  Product.find({ _id: { $in: items } })
+    .populate("brand")
+    .populate("wood")
+    .exec((err, docs) => {
+      return res.status(200).send(docs);
+    });
+});
+
+app.post("/api/product/article", auth, admin, (req, res) => {
+  const product = new Product(req.body);
+  product.save((err, doc) => {
+    if (err) return res.json({ success: false, err });
+    res.status(200).json({
+      success: true,
+      article: doc,
+    });
+  });
+});
+
 //===========================================
 //              WOODS
 //===========================================
-const { Wood } = require("./models/wood");
 
 app.post("/api/product/wood", auth, admin, (req, res) => {
   const wood = new Wood(req.body);
@@ -49,8 +102,6 @@ app.get("/api/product/woods", auth, admin, (req, res) => {
 //===========================================
 //              BRANDS
 //===========================================
-
-const { Brand } = require("./models/brand");
 
 app.post("/api/product/brand", auth, admin, (req, res) => {
   const brand = new Brand(req.body);
