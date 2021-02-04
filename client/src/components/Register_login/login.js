@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import FormField from '../utils/Form/formfield'
+import FormField from "../utils/Form/formfield";
 
 class Login extends Component {
   state = {
@@ -8,7 +8,7 @@ class Login extends Component {
     formSuccess: "",
     formdata: {
       email: {
-        element: "imput",
+        element: "input",
         value: "",
         config: {
           name: "email_input",
@@ -37,20 +37,22 @@ class Login extends Component {
   };
 
   updateForm = () => {
-    //
-  }
+    const newFormdata = update(element, this.state.formdata, "login");
+  };
 
   submitForm = () => {
     //
-  }
-
+  };
 
   render() {
     return (
       <div className="signin_wrapper">
-        <form onSubmin={(event) => this.submitForm(event)}>
-          <FormField id={'email'} formdata={{this.state.formdata.email}}
-          change={(element) => this.updateForm(element)}/>
+        <form onSubmit={(event) => this.submitForm(event)}>
+          <FormField
+            id={"email"}
+            formdata={this.state.formdata.email}
+            change={(element) => this.updateForm(element)}
+          />
         </form>
       </div>
     );
