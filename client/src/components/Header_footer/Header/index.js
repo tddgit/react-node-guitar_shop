@@ -9,7 +9,8 @@ class Header extends Component {
             <div className={"logo"}>WAVES</div>
           </div>
           <div className={"right"}>
-            <div className={"bottom"}></div>
+            <div className={"top"}>LINKS</div>
+            <div className={"bottom"}>LINKS</div>
           </div>
         </div>
       </header>
