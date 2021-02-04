@@ -17,6 +17,18 @@ const FormField = ({ formdata, change, id }) => {
           </div>
         );
         break;
+      case "password":
+        formTemplate = (
+          <div className="formBlock">
+            <input
+              {...formdata.config}
+              value={formdata.value}
+              onBlur={(event) => change({ event, id, blur: true })}
+              onChange={(event) => change({ event, id })}
+            />
+          </div>
+        );
+        break;
       default:
         formTemplate = "null";
     }
